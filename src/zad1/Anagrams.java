@@ -23,7 +23,6 @@ public class Anagrams {
     }
 
     public List<List<String>> getSortedByAnQty() {
-          //  List<List<String>> tempListOfLists = new ArrayList<>();
         listOfLists = new ArrayList<>();
         try {
             List<String> lineList = new ArrayList<>(Files.readAllLines(Paths.get(path)));
