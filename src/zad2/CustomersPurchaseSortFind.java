@@ -79,6 +79,15 @@ public class CustomersPurchaseSortFind {
         System.out.println();
 
     }
+    public void showPurchaseFor(String id){
+        System.out.println(id +": ");
+        for (Purchase val:
+             purchases) {
+            if(val.getId_klienta().equals(id)){
+                System.out.println(val);
+            }
+        }
+    }
 
 
 

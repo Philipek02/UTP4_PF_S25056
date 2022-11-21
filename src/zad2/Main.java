@@ -15,12 +15,12 @@ public class Main {
     cpsf.readFile(fname);
     cpsf.showSortedBy("Nazwiska");
     cpsf.showSortedBy("Koszty");
-//
-//    String[] custSearch = { "c00001", "c00002" };
-//
-//    for (String id : custSearch) {
-//      cpsf.showPurchaseFor(id);
-//    }
+
+    String[] custSearch = { "c00001", "c00002" };
+
+    for (String id : custSearch) {
+      cpsf.showPurchaseFor(id);
+    }
   }
 
 }
