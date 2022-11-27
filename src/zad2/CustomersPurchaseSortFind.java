@@ -80,7 +80,7 @@ public class CustomersPurchaseSortFind {
 
     }
     public void showPurchaseFor(String id){
-        System.out.println(id +": ");
+        System.out.println("Klient " + id +": ");
         for (Purchase val:
              purchases) {
             if(val.getId_klienta().equals(id)){

@@ -74,15 +74,7 @@ public class Anagrams {
     }
 
     public String getAnagramsFor(String word) {
-        boolean flag = false;
-        for (String slowo5:
-             wordList) {
-            if (slowo5.equals(word)) {
-                flag = true;
-                break;
-            }
-        }
-        if (!flag)return word + ": null";
+        if(!wordList.contains(word)) return word + ": null";
 
         char[] chars = word.toCharArray();
         Arrays.sort(chars);
